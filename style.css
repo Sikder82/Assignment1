@@ -76,11 +76,16 @@
     background-repeat: no-repeat;
     margin:auto;
     border-radius: 16px;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .partysection > div{
-    position: absolute;
-    margin-top: 100px;
+    /* position: absolute; */
+
+    /* margin-top: 100px; */
     margin-left: 100px;
 }
 .partysection h1{
@@ -111,20 +116,26 @@
     color: #FFF;
     text-decoration: none;
 }
+.partysection > .imge > img{
+    width: 319.83px;
+    height: 464.662px;
+    margin-right: 100px;
+    
+}
 
 /*Time Section */
 .timesection{
     width: 1320px;
     height: 482px;
     margin:100px auto;
+    text-align: center;
     border-radius: 16px;
+    padding-top: 100px;
     background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    position: relative;
 }
 
 .timesection p{
     color: #070211;
-    text-align: center;
     font-size: 32px;
     font-weight: 600;
     line-height: 56px; 
@@ -135,11 +146,10 @@
 }
 .timesection button{
     padding: 16px 32px;
-    text-align: center;
-    gap: 10px;
     border: none;
     border-radius: 8px;
     background-color: #F00;
+    margin-top: 50px;
 }
 .timesection button a{
     text-decoration: none;
@@ -207,6 +217,7 @@
 /*Holiday Section*/
 .holidaysection{
     text-align: center;
+    
 }
 .holidaysection h4{
     color: #070211;
@@ -217,12 +228,29 @@
     color: #F00;
     font-size: 72px;
     font-weight: 900;
+    margin: 30px;
 }
 .holidaysection p{
     color: rgba(7, 2, 17, 0.60);
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
+}
+.discountsection{
+    width: 1320px;
+    margin: 100px auto;
+
+}
+.discountsection > .left{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+.discountsection > .left > .dis{
+    position: absolute;
+    right: 350px;
+    top: 150px;
 }
 
 
@@ -269,10 +297,128 @@
     text-align: center;  
 }
 
+.subscribe >img{
+    margin-top: 100px;
+}
+.subscribe > h1{
+    margin-top: 20px;
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.subscribe > p{
+    color: rgba(7, 2, 17, 0.60);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.subscribe > .input{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.subscribe > .input > .searchbox{
+    width: 600px;
+    height: 18px;
+    padding: 30px 24px 27px 35px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+} 
+.subscribe > .input > .searchbox::placeholder{
+    color: rgba(7, 2, 17, 0.30);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+.subscribe > .input > .searchbox:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.subscribe > .input > .searchbox:checked{
+    border: none;
+}
+.subscribe > .input > .submit{
+    width: 210px;
+    height: 57px;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    border: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+.subscribe > .input > .submit:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /*Footer Section*/
-.footer{
+footer{
     width: 100%;
-    height: 609px;
-    background-color: #070211;
+    height: 600px;
+    background-color: #070211;  
+}
+.footer{
+    width: 1320px;
+    margin: auto;
+    padding-top: 100px;
+}
+.footer > .contactdetails{
+    display: flex;
+    justify-content:space-between;
+    margin-right: 100px;
+}
+
+.footer > .contactdetails > .location > address{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.footer > .contactdetails > .contact > .call{
+    display: flex;
+}
+.footer > .contactdetails > .contact > .call > p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 15px;
+}
+.footer > .contactdetails > .contact > .web{
+    display: flex;
+}
+.footer > .contactdetails > .contact > .web > p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 15px;
+}
+.footer > hr{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color:  rgba(255, 255, 255, 0.15);
+    margin: 50px 0px;
+}
+.footer > .icon{
+    display: flex;
+    justify-content: center;
+}
+.footer > .icon > img{
+    width: 64px;
+    height: 64px;
+    margin: 25px 10px;
+}
+.footer > .copyright{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
 }
