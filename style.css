@@ -4,24 +4,31 @@
 }
 
 
-
+/*Banner Section*/
 .banner{
     color: white;
     background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(resources/Banner\ Image.png);
     width: 1320px;
     height: 600px;
     background-repeat: no-repeat;
-    background-size: ;
+    background-size: cover;
     margin: 50px auto 0px;
     border-radius: 16px;
+    position: relative;
 }
 .banner h4{
-    color: #FFF;
+    position: absolute;
+    top: 30%;
+    width: 100%;
     text-align: center;
+    color: #FFF;
     font-size: 32px;
     font-weight: 400;
 }
 .banner h3{
+    position: absolute;
+    top: 40%;
+    width: 100%;
     color: #FFF;
     text-align: center;
     font-size: 72px;
@@ -30,39 +37,34 @@
 }
 
 
-/**/
-
-.text{
+/*65% off Section*/
+.discountarea{
     margin: 100px;
-
+    text-align: center;
 }
 
-.text h2{
+.discountarea h2{
     color: #F00;
-    text-align: center;
     font-size: 88px;
     font-weight: 700;
     margin: 10px;
 }
-.text p{
+.discountarea p{
     color: #F00;
-    text-align: center;
     font-size: 24px;
     font-weight: 500;
     margin: 2.5px;
 }
-.text h3{
+.discountarea h3{
     color: #070211;
-    text-align: center;
     font-size: 48px;
     font-weight: 700;
     margin: 5px;
 }
-.text img{
+.discountarea img{
     width: 803px;
     height: 500px;
     margin-top: 100px;
-    align-items: center;
 }
 
 /*Party Section Design Part*/
@@ -74,6 +76,12 @@
     background-repeat: no-repeat;
     margin:auto;
     border-radius: 16px;
+    position: relative;
+}
+.partysection > div{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 .partysection h1{
     color: #FFF;
@@ -81,7 +89,6 @@
     font-weight: 900;
     line-height: 88px; 
     letter-spacing: 7.04px;
-    margin-top: 126px;
 }
 
 .partysection p{
@@ -92,7 +99,7 @@
 }
 
 .partysection .join{
-    margin-top: 434px;
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -103,4 +110,123 @@
 .partysection .join a{
     color: #FFF;
     text-decoration: none;
+}
+
+/*Time Section */
+.timesection{
+    width: 1320px;
+    height: 482px;
+    margin:100px auto;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+}
+.timesection p{
+    color: #070211;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px; 
+    text-transform: capitalize;
+}
+.timesection p span{
+    color: #F00;
+}
+.timesection button{
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #F00;
+}
+.timesection button a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*Coming Soon section*/
+.comingsection{
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.new h4{
+    color: #F00;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.new h3{
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.new p{
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.cele{
+    margin-left: 40px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 463px;
+    border: 15px solid #F00;
+}
+.year{
+    margin-left: 200px;
+}
+.year h2{
+    color: #F00;
+    font-size: 48px;
+    font-weight: 700;
+}
+.year p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.year img{
+    width: 140px;
+    height: 140px;
+}
+
+/*Holiday Section*/
+.holidaysection{
+    text-align: center;
+}
+.holidaysection h4{
+    color: #070211;
+    font-size: 24px;
+    font-weight: 500;
+}
+.holidaysection h1{
+    color: #F00;
+    font-size: 72px;
+    font-weight: 900;
+}
+.holidaysection p{
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+
+/*Portfolio Section*/
+.portfoliosection .img{
+    text-align: center;
+    margin: 100px auto;
 }
